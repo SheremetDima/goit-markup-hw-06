@@ -558,6 +558,38 @@
             <use href="./images/sprite_orig.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="form">
+          <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="user-form">
+            <label>
+              Ім'я
+              <input type="text" name="username" placeholder="Jacob Mercer" autofocus />
+            </label>
+
+            <label>
+              Телефон
+              <input type="tel" name="tel" placeholder="+380-99-88-77-66" />
+            </label>
+
+            <label>
+              Пошта
+              <input type="email" name="email" placeholder="mail@mail.com" />
+            </label>
+
+            <textarea name="coment" placeholder="Введіть текст" id="coment" rows="10"></textarea>
+          </div>
+
+          <div class="security">
+            <label>
+              <input type="checkbox" name="hobby" value="" />
+            </label>
+            <p>Погоджуюся з розсилкою та приймаю</p>
+            <a href="">Умови договору</a>
+          </div>
+
+          <button class="form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
