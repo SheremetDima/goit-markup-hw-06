@@ -537,11 +537,12 @@ footer {
   color: var(--accent-color);
 }
 
-/* ------------- social ------------- */
+/* ------------- FOOTER social ------------- */
 
 .social-text {
   font-weight: 700;
   line-height: 1.14px;
+  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -572,6 +573,71 @@ footer {
 
 .foter-soc-icon {
   fill: #ffffff;
+}
+/* ------------FOOTRE follow ------------ */
+
+.follow {
+  width: 570px;
+}
+
+.follow-label {
+  display: flex;
+  gap: 12px;
+}
+
+.follow-text {
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  margin-bottom: 20px;
+}
+
+.follow-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.follow-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
+.follow-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--second-text-color);
+
+  width: 200px;
+  height: 50px;
+  left: 1185px;
+  top: 2784px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  display: block;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms linear;
+}
+
+.follow-btn:hover {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /*************** PORFOLIO ****************/
@@ -731,41 +797,134 @@ footer {
 }
 
 .modal-close-icon {
-  color: currentColor;
+  fill: currentColor;
 }
 
 .modal-btn:hover {
   color: var(--accent-color);
 }
-/*------------------ FORM --------------------- */
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: tomato;
-}
-
-.user-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  margin-bottom: 20px;
-}
+/*------------------ USER FORM --------------------- */
 
 .form-text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
 
-.security {
+.modal-field {
+  margin-bottom: 10px;
+  
+}
+
+.modal-label {
+  font-size: 12px;
+  color: var(--content-text-colot);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-wrap {
+  position: relative;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 12px 11px 42px;
+  outline: transparent;
+
+  transition: border 250ms linear, color 5250ms linear;
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  fill: currentColor;
+}
+
+.modal-input:focus,
+.modal-area:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-input:focus + .modal-input-icon {
+  color: var(--accent-color);
+}
+
+.modal-input:hover,
+.modal-area:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-input:hover + .modal-input-icon {
+  color: var(--accent-color);
+}
+
+.modal-area {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  resize: none;
+  transition: border 250ms linear;
+}
+
+.modal-area::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/*  */
+.input-check {
+ }
+
+.check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--content-text-colot);
   display: flex;
-  margin-bottom: 30px;
+  gap: 7px;
+  align-items: center;
+  position: relative;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  background-color: var(--main-backgraund-color);
+  border: 2px solid #212121;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  fill: var(--main-backgraund-color);
+}
+
+.input-check:focus + .check-text span {
+  border-color: var(--accent-color);
+}
+
+.input-check:hover + .check-text span {
+  border-color: var(--accent-color);
+}
+
+.check-text-link {
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 .form-btn {
@@ -781,10 +940,17 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--accent-color);
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  cursor: pointer;
+
+  transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 
-/* .is-hiden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-} */
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #188ce8;
+}
