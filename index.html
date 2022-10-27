@@ -550,18 +550,20 @@
           </ul>
         </div>
 
-        <div class="follow">
-          <span class="follow-text">Підпишіться на розсилку</span>
-          <label for="mail" class="follow-label">
-            <input type="mail" name="mail" placeholder="E-mail" class="follow-input" />
-            <button type="submit" class="follow-btn">
-              Підписатися
-              <svg class="follow-icon" width="24" height="24">
-                <use href="./images/sprite_orig.svg#icon-send"></use>
-              </svg>
-            </button>
-          </label>
-        </div>
+        <form>
+          <div class="follow">
+            <span class="follow-text">Підпишіться на розсилку</span>
+            <label for="email" class="follow-label">
+              <input type="email" name="email" placeholder="E-mail" class="follow-input" />
+              <button type="submit" class="follow-btn">
+                Підписатися
+                <svg class="follow-icon" width="24" height="24">
+                  <use href="./images/sprite_orig.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+        </form>
       </div>
     </footer>
 
@@ -595,7 +597,6 @@
               </svg>
             </div>
           </div>
-
           <div class="modal-field">
             <label for="user-phone" class="modal-label">Телефон</label>
             <div class="input-wrap">
@@ -639,7 +640,7 @@
             ></textarea>
           </div>
 
-          <div class="modal-field">
+          <div class="modal-polisy">
             <input
               type="checkbox"
               class="input-check visually-hidden"
@@ -654,8 +655,8 @@
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю
-              <a href="" class="check-text-link link">Умови договору</a></label
-            >
+            </label>
+            <a href="" class="check-text-link link"> Умови договору</a>
           </div>
           <button class="form-btn" type="submit">Відправити</button>
         </form>
